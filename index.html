@@ -1,1 +1,1450 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ChatGPS Report</title>
+    <link rel="icon" type="icons/icon.jpg" href="./icons/icon.jpg">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <meta name="viewport" content="width=device-width"/>
+   <style>
+      body {
+         text-align: left;
+         background: url("./backgrounds/7237895.jpg");
+      }
+      .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
+        .input-icons {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .input-icons i {
+            position: absolute;
+        }
+ /*     figure {
+         display: block;
+         margin: 0;
+         padding: 0;
+      }*/
+      /*figcaption {
+         font-family: Arial, sans-serif;
+         font-size: 14px;
+         font-weight: bold;
+         color: white;
+         margin-top: 10px;
+         margin-left: 10px;
+         margin-right: 5px;
+         background-color: #aaaaff;
+         padding: 5px;
+         text-align: center;
+      }*/
+      h2{
+         display: block;
+         margin: 0;
+         padding: 5px;
+         color: #ffbc00;
+         margin-right: 10px;
+      }
+      p.h2{
+         display: block;
+         margin: 0;
+         padding: 5px;
+         padding-left: 5px;
+         color: #ffec88;
+         background: url("./backgrounds/pikrepo (19).jpg");
+      }
+      h3{
+         display: block;
+         margin: 0;
+         padding: 5px;
+         padding-left: 20px;
+         color: #bcff00;
+      }
+      p.h3{
+         display: block;
+         margin: 0;
+         padding: 5px;
+         padding-left: 20px;
+         color: #ccffcc;
+      }
+      h4{
+         display: block;
+         margin: 0;
+         padding: 5px;
+         padding-left: 25px;
+         color: #cceeff;
+      }
+      p.h4{
+         display: block;
+         margin: 0;
+         padding: 5px;
+         padding-left: 30px;
+         color: #ffccff;
+      }
+      .menu_icon{
+        width:30px;
+        height: 11px;
+      }
+      section > .desc {
+        display: none;
+        padding: 5px;
+/*        border: solid red 2px;*/
+/*        background-color:#efefef;*/
+        background: url("./backgrounds/pxfuel_3.jpg");
+        margin-left: 10px;
+      }
+      .desc {
+        display: none;
+        padding: 5px;
+/*        border: solid red 2px;*/
+/*        background-color:#efefef;*/
+        background: url("./backgrounds/pikrepo (19).jpg");
+        margin-left: 10px;
+      }
+
+.fig_h3 {
+/*    margin: 1em 0;*/
+    text-align: center;
+    margin-left: 5px;
+    background-color: rgba(200,200,200,.7);
+    background:url("./backgrounds/pxfuel (4).jpg");
+
+}
+.fig_h3 > figure {
+    display: inline-block;
+    background-color: rgba(20,20,20,.7);
+    opacity;.1;
+}
+.fig_h3 > figure > img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+.fig_h3 > figure > figcaption {
+    float: center;
+    width: 100%;
+    background-color: #556;
+    color: #ccffcc;
+    font-size: 12px;
+}
+.fig_h3 > figure + figcaption {
+    clear: both;
+    background-color: #666;
+    color: #11ff11;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.fig_h3 > figure > .multi_img{
+        width:180px;
+        height:320px;
+      }
+.fig_h4 {
+    margin: 1em 0;
+    text-align: center;
+    margin-left: 5px;
+    background-color: rgba(200,200,200,.7);
+    background:url("./backgrounds/pikrepo (13).jpg");
+}
+
+.fig_h4 > figure {
+    display: inline-block;
+    background-color: rgba(20,20,20,.7);
+    opacity;.1;
+}
+.fig_h4 > figure > img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+.fig_h4 > figure > figcaption {
+    float: center;
+    width: 100%;
+    background-color: #556;
+    color: #cceeff;
+    font-size: 12px;
+}
+.fig_h4 > figure + figcaption {
+    clear: both;
+    background-color: #666;
+    color: #88aaff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+}
+.fig_h4 > figure > .multi_img{
+        width:180px;
+        height:320px;
+      }
+
+
+.link_h2{
+    margin-left:60px;
+    color: #bcff00;
+}
+/*figure > figure:nth-child(1) {
+    width: 31%;
+}
+figure > figure:nth-child(2) {
+    width: 31%;
+}
+figure > figure:nth-child(3) {
+    width: 25%;
+}*/
+
+
+.select {padding:5px; margin-top:5px; font-size:25px;}
+
+
+.button {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+    font: bold 12px/25px Arial, sans-serif;
+ 
+    text-shadow: 1px 1px 1px rgba(255,255,255, .22);
+ 
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+ 
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+ 
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+}
+.blue {
+    color: #ffbc00;
+ 
+    background: #777777; /* Old browsers */
+/*    background: -moz-linear-gradient(top,  #70c9e3 0%, #39a0be 100%); /* FF3.6+ */
+/*    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#70c9e3), color-stop(100%,#39a0be)); /* Chrome,Safari4+ */
+/*    background: -webkit-linear-gradient(top,  #70c9e3 0%,#39a0be 100%); /* Chrome10+,Safari5.1+ */
+/*    background: -o-linear-gradient(top,  #70c9e3 0%,#39a0be 100%); /* Opera 11.10+ */
+/*    background: -ms-linear-gradient(top,  #70c9e3 0%,#39a0be 100%); /* IE10+ */
+/*    background: linear-gradient(top,  #70c9e3 0%,#39a0be 100%); /* W3C */
+}
+.big {
+    padding: 0 40px;
+    padding-top: 1px;
+    height: 45px;
+    text-transform: uppercase;
+    font: bold 20px/22px Arial, sans-serif;
+}
+ 
+.big span {
+    display: block;
+    text-transform: none;
+    font: italic normal 12px/18px Georgia, sans-serif;
+    text-shadow: 1px 1px 1px rgba(255,255,255, .12);
+}
+.button:hover {
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.29), inset 0px 0px 2px rgba(0,0,0, .5);
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,.29), inset 0px 0px 2px rgba(0,0,0, .5);
+    box-shadow: 1px 1px 1px rgba(0,0,0,.29), inset 0px 0px 2px rgba(0,0,0, .5);
+}
+   </style>
+</head>
+<body>
+<script>
+// <script type="text/javascript">
+function findParentDiv(from){
+    var node = from.parentNode;
+    while ( node != null ){
+        if ( node.tagName == "DIV" ) return node;
+        }
+    return null;
+    }
+function descw(image){
+    var which = findParentDiv(image);
+    var divs = document.getElementsByTagName("div");
+    for ( var d = 0; d < divs.length; ++d ){
+        if ( divs[d] == which ){
+            for ( var dd = d+1; dd < divs.length; ++ddd ){
+                if ( divs[dd].className == "desc" ){
+
+                    if (divs[dd].style.display =="block"){
+                        divs[dd].style.display = "none";
+                    }else divs[dd].style.display = "block";
+                    return;
+                    }
+                }
+            }
+        }
+    }
+function descc(image){
+    var div = findParentDiv(image);
+    if ( div != null ) div.style.display = "none";
+    }
+</script>
+<h1 style="color:#aaaaff;" class='center'>ChatGPS Report</h1>
+<section>
+<h2>Abstract</h2>
+<p class='h2'>
+This application aims to address the problem of phone users' thought dispersion, the cause of this dispersion is mainly related to the excessive use of a large number of applications daily, so this application offers an integrated model of built-in use of the most important technologies needed by users, as the application contains GPS location tracking, accompanied by the weather, driver assistant, chat, accessing and controlling devices.
+</p>
+</section>
+<section>
+<h2>Introduction</h2>
+<p class='h2'>
+    A vast category of users suffer from the problems of mismanaging their personal activities. As a result, these people lose the happiness. This lose is due to several reasons, the most likely is because they find themselves facing the desires of others, yes, those desires that they did not establish their lives for it, which makes them feel like they have nothing in their lives. Therefore, it was necessary to create some applications that give users the ability to control everything in their lives without negatively affect on others. That is, increasing the compatibility ratio between users. In this regard, we have created an application that enables users to control their phones remotely, track many contacts' locations as well as communicate with them at the same time and repair contacts' devices using shell (if you have the authorisation). Also, this application makes it possible to know the shortest routes, bus and train stations, as well as calculate the real distance between various places and contacts. Unlike other applications, this one does not store users' data on any online database, just saves the data in the device, this data is encrypted with a custom algorithm (for each user). This makes it impossible to access it by others, let alone read it. Therefore, servers only make sure that the account is registered and connected with contacts. In the other hand, we created a correction system, that can fix almost probably errors appear when add, change contacts or formatting your device, so the app can restore the history of your contacts without any online database. Also, all data are encrypted by the sender's application using several algorithms, and decrypted by the receiver's application. To eliminate the possibility of unethical use, blockout features have been added, as well as reporting any abusive, blackmailing or obscene speech; any user can activate it, which will allow it to be sent to developers via the server. For this application, more than forty servers have been used that can be increased if we need more, working 24/7 in a week, to ensure the convenience of users. It should also be noted that the application is free, and does not include any annoying ads, currently, this application consists of 3 levels out of 8, the rest will be shared if the application gets the users' interest. The first level is for people interested only in GPS, distances, areas, weather, and trace routes. So, they wouldn't have to create an account. The second level begins with making a new account for your device so that if the GPS does not turn on the device, the application will take a random location close to the destination where the device is located. While all contacts can be added via sending invitations. Once an invitation is accepted, both users will be able to know each other's locations, and then start the conversation, the GPS usage of the other user's device can appear as a red flag (if the GPS is not activated). The third level begins when the user has the authorisation to access a first contact device. First The user must be an adult, then, he must send the shell request, after accepting this request by the contact, the user can access the other device shell, and then, he can easily move, create and delete files/directories, also, he can getting files from the other device if they have the same full name.
+</p>
+
+<div class="select"><h2>Architecture </h2><img src="icons/interface.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:10px;"></img> </div>
+<div class="desc">
+<div style="margin:5px 5px 5px 10px;">
+    <figure class="fig_h3">
+        <img src="backgrounds/architecture.png" alt="maps_8" class='multi_img'>
+      <figcaption>Fig.0- Global Architecture</figcaption>
+   </figure>
+</div>
+<img src="icons/close-icon.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+</section>
+
+<section>
+<div class="select"><h2>I- Scientific GPS (SciGPS)</h2><img src="icons/interface.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:10px;"></img> </div>
+<div class="desc">
+<p class='h2'>
+    The level of SciGPS is the basic level in this application, at this level the user does not need to create any account or share something with contacts, it is open for all public categories, this level contains the traditional features available in most GPS-MAPS applications. Therefore, this level is the basic platform that has been used to create the highest levels with a good quality and experience.
+</p>
+<!-- <h3>1- Maps:</h3> -->
+
+<div class="select"><h3>1- Maps </h3><img src="icons/9141922.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:30px;"></div>
+<div class="desc">
+<p class='h3'>
+    The map is one of the most important basic feature. This map will download and store automatically while searching for places.
+    The application currently includes 7 different OpenStreetMap, including patterns that specialize in knowing the locations of bus and train stations and the different roads styles, including public organisations and private facilities, others maps for localising green spaces, and those to know the heights relative to the level of the sea. Therefore, the multiplicity of choices is primarily in favour of users. The interface includes the status for the latitude and longitude, and zooms below the map, which helps the user to know exact the locations, when the user clicks on the coordinate status, the currently available maps menu appears so that the user can change the map style automatically.
+</p>
+<div style="margin:5px 5px 5px 10px;">
+    <figure class="fig_h3">
+        <figure>
+          <img src="maps/fig10.jpg" alt="maps_0" class='multi_img'>
+          <figcaption>(a)- ChatGPS Interface</figcaption>
+        </figure>
+        <figure>
+          <img src="maps/fig11.jpg" alt="maps_1" class='multi_img'>
+          <figcaption>(b)- Maps Menu</figcaption>
+        </figure>
+        <figure>
+          <img src="maps/fig12.jpg" alt="maps_2" class='multi_img'>
+          <figcaption>(c)- Institutions Style</figcaption>
+        </figure>
+        <figure>
+          <img src="maps/fig13.jpg" alt="maps_3" class='multi_img'>
+          <figcaption>(d) Roadaways Style</figcaption>
+        </figure>
+        <figure>
+          <img src="maps/fig14.jpg" alt="maps_4" class='multi_img'>
+          <figcaption>(e)- Landscape Style</figcaption>
+        </figure>
+        <figure>
+          <img src="maps/fig15.jpg" alt="maps_5" class='multi_img'>
+          <figcaption>(f)- Transport Style</figcaption>
+        </figure>
+        <figure>
+          <img src="maps/fig16.jpg" alt="maps_6" class='multi_img'>
+          <figcaption>(g)- Highlands Style</figcaption>
+        </figure>
+        <figure>
+          <img src="maps/fig17.jpg" alt="maps_7" class='multi_img'>
+          <figcaption>(h)- Cycleways Style</figcaption>
+        </figure>
+        <figure>
+          <img src="maps/fig18.jpg" alt="maps_8" class='multi_img'>
+          <figcaption>(i)- Cycleways Style With A Zoom</figcaption>
+        </figure>
+      <figcaption>Fig. 1.1- Figure Representative For All Maps Includes In The App</figcaption>
+   </figure>
+</div>
+<p class='h3'>
+    Figure 1 represents a set of images taken while browsing map styles integrated with the application, Figure 1.a represents an image from opening the application for the first time. Whereas are two buttons for settings and login at the top, under which there is an OpenStreetMap (OSM), inside the map, we insert some basic measurements of the real-time weather for the map centre location. Under this status, there is a button for the map centre coordinates and the zoom value while moving the map.
+    Then at the bottom, there are three buttons, the 'select state' button can change the nature of the stats from 1D to 2D or vice versa, then the 'Find Path' button to activate the 'Trace Route' feature, will only work by adding at least two markers. Then on the right we find the GPS button, to locate the device on the map, it will not be activated unless there is internet.
+    Figure 1.b shows the list of maps integrated into the application, which can be shown by pressing the coordinate button and zoom. Through the image, the application contains seven different styles of maps that can be switched between them with one click, and the rest of the application features will not be affected when switching the map.
+    The 'Institutions' style (Figure 1.c) shows and recognizes all institutions' locations in each street, the Roadways pattern (Figure 1.d) shows the main roads in the city, then the landscape pattern shows the most important green areas in the wilderness valleys, then the transport pattern shows the railways distribution, train and bus stations, then the highlands pattern shows the elevations between plains, plateaus and mountains.  Then the cycleway pattern shows the paths designated for cyclists and pedestrians in cities. Thus, the most important maps have been included to help the most active social groups and motivate them to do their best to build a good future for the next generations.
+</p>
+<!-- <h3>1-  <a href="./maps/maps.html" target="_blank">Maps</a>.</p> -->
+<img src="icons/7268053.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+<div class="select"><h3>2- Search </h3><img src="icons/9141922.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:30px;"></div>
+<div class="desc">
+<p class='h3'>
+    The location search feature is one of the most important components of applications that are based on maps, as the search feature makes it easier for users to find places that are difficult to reach by only browsing the map. Therefore, it has been included in our application, it is enough to click on the magnify button at the map top, then enter one or more words indicating the place that the user wants to reach, while typing the words, addresses appear indicating the location of the written word including its coordinates. After pressing this address, the map automatically moves to the centre of the indicated place, if the place does not match the user's desires, he can re-search again and again without any difficulties.
+</p>
+<div style="margin:5px 5px 5px 10px;">
+    <figure class="fig_h3">
+        <figure>
+      <img src="search/fig200.jpg" alt="search_0" class='multi_img'>
+          <figcaption>(a)- The App's Interface At The Start</figcaption>
+        </figure>
+        <figure>
+      <img src="search/fig20.jpg" alt="search_0" class='multi_img'>
+          <figcaption>(b)- After Pressing The Search Icon</figcaption>
+        </figure>
+        <figure>
+      <img src="search/fig21.jpg" alt="search_1" class='multi_img'>
+          <figcaption>(c)- After Typing A Place Name ('Paris')</figcaption>
+        </figure>
+        <figure>
+      <img src="search/fig22.jpg" alt="search_2" class='multi_img'>
+          <figcaption>(d)- After Pressing The Giving Addresse</figcaption>
+        </figure>
+        <figure>
+      <img src="search/fig23.jpg" alt="search_3" class='multi_img'>
+          <figcaption>(e)- After Typing Another Name ('harvard')</figcaption>
+        </figure>
+        <figure>
+      <img src="search/fig24.jpg" alt="search_4" class='multi_img'>
+          <figcaption>(f)- After Pressing The New Giving Addresse</figcaption>
+        </figure>
+      <figcaption>Fig. 1.2- Figure Representative For The App Search Processus</figcaption>
+   </figure>
+</div>
+<p class='h3'>
+    Figure 2.a indicates the status of the application when it runs, then after pressing the magnify button, a place appears to enter the search words (Figure 2.b), at the beginning of entering the words, the address automatically appears to match the listed words (Figure 2.c), after pressing address, the map moves to the indicated place (Figure 2.d), you can research for different places using the word and move to it immediately with zoom = 18. The user can also cancel the search by pressing again on the Magnify Close button.
+</p>
+<img src="icons/7268053.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+<div class="select"><h3>3- Distance </h3><img src="icons/9141922.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:30px;"></div>
+<div class="desc">
+<p class='h3'>
+    Calculating geographical distances is a feature available in some maps via the Internet, and it is also very useful in GPS applications, it can be used to find out the distance between two remote locations, or between the user's location and the place he wants to go, which will help him estimate the time required for this mobility, depending on the means of transportation that he can use and the type of roads he encounters during his movement,  Thus, by knowing the distance, users can manage their time smoothly.
+</p>
+<div style="margin:5px 5px 5px 10px;">
+    <figure class="fig_h3">
+        <figure>
+      <img src="distance/fig30.jpg" alt="distance_0" class='multi_img'>
+          <figcaption>(a)- Adding A First Distance Position</figcaption>
+        </figure>
+        <figure>
+      <img src="distance/fig31.jpg" alt="distance_1" class='multi_img'>
+          <figcaption>(b)- After Pressing 'Distance' Label</figcaption>
+        </figure>
+        <figure>
+      <img src="distance/fig32.jpg" alt="distance_2" class='multi_img'>
+          <figcaption>(c)- Moving The Marker To Another Position</figcaption>
+        </figure>
+        <figure>
+      <img src="distance/fig33.jpg" alt="distance_3" class='multi_img'>
+          <figcaption>(d)- Add A New Marker</figcaption>
+        </figure>
+        <figure>
+      <img src="distance/fig34.jpg" alt="distance_4" class='multi_img'>
+          <figcaption>(e)- After Pressing 'Add New Location' Label</figcaption>
+        </figure>
+        <figure>
+      <img src="distance/fig35.jpg" alt="distance_5" class='multi_img'>
+          <figcaption>(f)- Moving The Marker To A Target Position</figcaption>
+        </figure>
+        <figure>
+      <img src="distance/fig36.jpg" alt="distance_6" class='multi_img'>
+          <figcaption>(g)- Menu For Changing The Distance Unit</figcaption>
+        </figure>
+        <figure>
+      <!-- <img src="fig37.jpg" alt="distance_7" class='multi_img'> -->
+      <img src="distance/fig38.jpg" alt="distance_8" class='multi_img'>
+          <figcaption>(h)- The App Display The Distance Using The Selected Unit</figcaption>
+        </figure>
+        <figure>
+      <img src="distance/fig39.jpg" alt="distance_9" class='multi_img'>
+          <figcaption>(i)- Adding More Markers Or Removing The Latest</figcaption>
+        </figure>
+        <figure>
+      <img src="distance/fig390.jpg" alt="distance_90" class='multi_img'>
+          <figcaption>(j)- After Adding Three Markers</figcaption>
+        </figure>
+        <figure>
+      <img src="distance/fig391.jpg" alt="distance_91" class='multi_img'>
+          <figcaption>(k)- After Adding Other Three Markers</figcaption>
+        </figure>
+        <figure>
+      <img src="distance/fig392.jpg" alt="distance_92" class='multi_img'>
+          <figcaption>(l)- Testing The Postions Stabilities After The Zoom</figcaption>
+        </figure>
+        <figure>
+      <!-- <img src="fig393.jpg" alt="distance_93" class='multi_img'> -->
+      <img src="distance/fig394.jpg" alt="distance_94" class='multi_img'>
+          <figcaption>(m)- Remove The Markers Is Starting From The Latest</figcaption>
+        </figure>
+        <figure>
+      <!-- <img src="fig395.jpg" alt="distance_95" class='multi_img'> -->
+      <!-- <img src="fig396.jpg" alt="distance_96" class='multi_img'> -->
+      <img src="distance/fig397.jpg" alt="distance_97" class='multi_img'>
+          <figcaption>(n)- After Removing Four Markers</figcaption>
+        </figure>
+        <figure>
+      <img src="distance/fig398.jpg" alt="distance_98" class='multi_img'>
+          <figcaption>(o)- All Markers Remove After Pressing 'Select State' Label</figcaption>
+        </figure>
+      <figcaption>Fig. 1.3- Figure Representative For Adding And Removing Markers From The Map</figcaption>
+   </figure>
+</div>
+<p class='h3'>
+    When the application is running, and according to Figure 3.a, the user presses the select state button, then a menu appears including the distance and area states (or can deny by choosing select state). When the user clicks on the distance label, the first marker appears in the centre of the map (Figure 3.b). It can be moved to any location that the user wants to make as a starting point, for example, it has been converted to the French country, after that, the user can add a new marker by clicking on the latest marker, then 'Add New Location' to display the second marker (Figure 3.d-e). Moving one marker to another place, the value of the geographical distance between them appears at the bottom of the screen in meters (Figure 3.f). To change the distance unit, it is enough to click on the distance value to display all the units integrated into the application, and then the user can choose one of them, in this regard, most users like to use large units to measure large distances and small units to measure small distances. Some want to use small units to measure all distances. For example, here in Figure 3.h, inch was chosen instead of meter, which increased the accuracy of the distance from 10 digits to 12 digits. To add more than two markers, it is enough to click on the latest marker, and then preview the distance across the screen so that the distance value is the sum of the distance between all markers indicated by the blue line (Figure 3.j). Users can add infinity of markers in the same way (Figure 3.k), and zooming in or out of the map does not make any distortions in the lines or markers locations (Figure 3.l). Users can remove some markers by pressing the last one, then pressing the 'remove' label (Figure 3.m), or pressing the distance button and then the 'select state' label, and then all markers disappear from the map (Figure 3.n-o).
+</p>
+<img src="icons/7268053.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+<div class="select"><h3>4- Area </h3><img src="icons/9141922.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:30px;"></div>
+<div class="desc">
+
+<p class='h3'>
+    In the same way as in the case of distances (Figure 3), the area can be calculated for any land, city or country by choosing the area state instead of distance, then the first marker in the map will appear  (Figure 4.a), then add two markers, to show the value of the area at the bottom in squar meter (Figure 4.b), then users can add infinity of markers and preview the value of the area at the bottom (Figure 4.e),  To change the area unit, it is enough to click on the area value at the bottom, then the list of units appears, then choose any unit preferred by the user, which automatically converts the area value (Figure 4.f-g), the perimeter unit can also be changed in the same way (Figure 4.h), and zooming in or out of the map does not affect the marker's location and as well as measuring lines, according to Figure 4.i, users can change the markers places easy and then preview the values of area and perimeter below automatically (Figure 4.j). However the area measures will affected when the order of the markers is not respected, which leads to a sharp decrease in the area value, so users remove markers in the order of the markers starting from the last or change the status to 'select state' (Figure 4.m-o).
+</p>
+<div style="margin:5px 5px 5px 10px;">
+    <figure class="fig_h3">
+        <figure>
+      <img src="area/fig40.jpg" alt="area_0" class='multi_img'>
+          <figcaption>(a)- After Pressing 'Select State' Button</figcaption>
+        </figure>
+        <figure>
+      <img src="area/fig41.jpg" alt="area_1" class='multi_img'>
+          <figcaption>(b)- After Pressing 'Area' Label</figcaption>
+        </figure>
+        <figure>
+      <img src="area/fig42.jpg" alt="area_2" class='multi_img'>
+          <figcaption>(c)- After Adding A New Marker</figcaption>
+        </figure>
+        <figure>
+      <img src="area/fig43.jpg" alt="area_3" class='multi_img'>
+          <figcaption>(d)- The Area Mesures Starting After Adding Three Markers</figcaption>
+        </figure>
+        <figure>
+      <img src="area/fig44.jpg" alt="area_4" class='multi_img'>
+          <figcaption>(e)- Adding More Markers After Pressing On The Latest</figcaption>
+        </figure>
+        <figure>
+      <img src="area/fig45.jpg" alt="area_5" class='multi_img'>
+          <figcaption>(f)- The Units Menu Appear After Pressing The Area Mesure Position</figcaption>
+        </figure>
+        <figure>
+      <img src="area/fig46.jpg" alt="area_6" class='multi_img'>
+          <figcaption>(g)- After Changing The Area Unit</figcaption>
+        </figure>
+        <figure>
+      <img src="area/fig47.jpg" alt="area_7" class='multi_img'>
+          <figcaption>(h)- After Changing The Perimeter Unit</figcaption>
+        </figure>
+        <figure>
+      <img src="area/fig48.jpg" alt="area_8" class='multi_img'>
+          <figcaption>(i)- Testing The Postions Stabilities After The Zoom</figcaption>
+        </figure>
+        <figure>
+      <img src="area/fig49.jpg" alt="area_9" class='multi_img'>
+          <figcaption>(j)- After Moving The Position For Few Markers</figcaption>
+        </figure>
+        <figure>
+      <img src="area/fig490.jpg" alt="area_90" class='multi_img'>
+          <figcaption>(k)- The Area Mesures Decrease If The Markers' Order Is Not Supported</figcaption>
+        </figure>
+        <figure>
+      <img src="area/fig491.jpg" alt="area_91" class='multi_img'>
+          <figcaption>(l)- The Area Mesures Is Calculated Following The Markers' Order</figcaption>
+        </figure>
+        <figure>
+      <img src="area/fig492.jpg" alt="area_92" class='multi_img'>
+          <figcaption>(m)- The Markers Remove Begin From The Latest</figcaption>
+        </figure>
+        <figure>
+      <img src="area/fig493.jpg" alt="area_93" class='multi_img'>
+          <figcaption>(n)- The Area Measure Change After Touchin The Screen</figcaption>
+        </figure>
+        <figure>
+      <img src="area/fig494.jpg" alt="area_94" class='multi_img'>
+          <figcaption>(o)- The Area Disapear When Remaining Less Than Three Markers</figcaption>
+        </figure>
+      <figcaption>Fig. 1.4- Figure Representative For The Area Design Processus By Adding The Markers In The Map</figcaption>
+   </figure>
+</div>
+<img src="icons/7268053.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+<div class="select"><h3>5- GPS </h3><img src="icons/9141922.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:30px;"></div>
+<div class="desc">
+<p class='h3'>
+    GPS is the most important element in tracking applications and knowing the locations of contacts without the need to call them to find out their locations, so these applications must contain a high degree of accuracy and simplicity.
+</p>
+<div style="margin:5px 5px 5px 10px;">
+    <figure class="fig_h3">
+        <figure>
+      <img src="gps/fig50.jpg" alt="gps_0" class='multi_img'>
+          <figcaption>(a)- Starting The GPS Streaming</figcaption>
+        </figure>
+        <figure>
+      <img src="gps/fig51.jpg" alt="gps_1" class='multi_img'>
+          <figcaption>(b)- Starting The Device's GPS (Also The Connexion)</figcaption>
+        </figure>
+        <figure>
+      <img src="gps/fig52.jpg" alt="gps_2" class='multi_img'>
+          <figcaption>(c)- The GPS Location Appear Immediatly In The Map</figcaption>
+        </figure>
+        <figure>
+      <img src="gps/fig53.jpg" alt="gps_3" class='multi_img'>
+          <figcaption>(d)- After Pressing The GPS Icon</figcaption>
+        </figure>
+        <figure>
+      <img src="gps/fig55.jpg" alt="gps_5" class='multi_img'>
+          <figcaption>(e)- After Pressing The 'Zoom To The Location' Label</figcaption>
+        </figure>
+        <figure>
+      <img src="gps/fig58.jpg" alt="gps_8" class='multi_img'>
+          <figcaption>(f)- After Reducing The Map Zoom From 16 To 6</figcaption>
+        </figure>
+        <figure>
+      <img src="gps/fig56.jpg" alt="gps_6" class='multi_img'>
+          <figcaption>(g)- After Reducing The Map Zoom From 6 To 4</figcaption>
+        </figure>
+        <figure>
+      <img src="gps/fig57.jpg" alt="gps_7" class='multi_img'>
+          <figcaption>(h)- The GPS Icon Disappear After Pressing The GPS Button</figcaption>
+        </figure>
+      <figcaption>Fig. 1.5- Figure Representative For Streaming And Stoping The GPS Service</figcaption>
+   </figure>
+</div>
+<p class='h3'>
+    To determine the GPS location of the device, first, the device must have a GPS service, while all smartphones have GPS, but some other smart devices don't, such as laptops and many types of cars and trucks, for those, users can sell GPS adapters and connect them with the control panel, which can enable applications to found the device location on the map, so the smartphone was used instead of laptop in Figure 5 to clarify the mechanism of the application's handling of GPS, in some smartphones GPS, CAMERA, MICROPHONE services do not work with new applications until after allowing them through the settings in the permissions section,  so if the app can't turn on GPS, CAMERA, ... etc, please make sure that the device given all the permissions needed through the settings. Well, after the application is running, please click on the Run GPS button at the bottom of the App (Figure 5.a), then make sure that the Internet and GPS services (Figure 5.b) are turned on, just by moving the map your location will automatically appear on the map (Figure 5.c). To activate zoom to the location, it is enough to click on the icon in the map, then 'Zoom To Location' (Figure 5.d), then the map will move to the GPS location with zoom=18 (Figure 5.e), then the user can move the map until the images appear in higher quality (Figure 5.f-g), then to stop GPS, it is enough to press 'Stop GPS' in green to automatically disappear the location from the map (Figure 5.h).
+</p>
+<img src="icons/7268053.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+<div class="select"><h3>6- Weather </h3><img src="icons/9141922.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:30px;"></div>
+<div class="desc">
+<p class='h3'>
+    The navigation system is essential in track or travel applications to know the characteristics of the weather at any place in the world, which helps users to prepare their day program with better accuracy, statistics of the characteristics of the current weather have been added for the location in the middle of the map. So that the temperature on the right can be observed in °C, then the ratio of humidity, the value of air pressure, then the wind speed in meters per second accompanied by its direction according to the clockwise (Figure 6). For example, in the Desert of Africa (Figure 6.a), we find that during the evening on the fourth of June 2024, the temperature is 38 °C and the humidity is 9%, meaning that the weather is dry and the pressure is low 1008 Pa, which means a lack of oxygen in this place, and the wind speed is 6.6m/s, equivalent to 29 km/h towards sunset. Our second example is a location in the middle of the Mediterranean Sea during the evening, where the temperature is 22°C, which is a moderate temperature, but the humidity is high (79%) and the pressure is 1015 Pa, and the wind speed is 4.79 m/s, which is approximately 17 km / h towards the west, meaning that the atmosphere is relatively stable (Figure 6.b), then Figure 6.c shows a temperature of 26°C, a humidity of approximately 65%, and a moderate wind speed of about 18km/h, on the shore of the central Mediterranean island, these statistics are same with Figure 6.b statistics, then we also have Figure 6.d which shows the weather status in the north at the afternoon, so that the temperature is approximately 0°C and high humidity 98% and pressure of 1018Pa, all this due to the high oxygen density, and the winds are semi-stable by about 11 km/h towards the southeast. Figure 6.e represents weather status in the islands of the central Atlantic with moderate temperature, high humidity and pressure, as expected, with weak winds, then in the west of the USA in Figure 6.f, we notice a low temperature with moderate humidity as well as moderate pressure, but the wind speed is high due to the high intensity of the region that faces at the foot of the mountains (38 km/h) towards the southwest.
+    In Figure 6.g we observe a decrease in the temperature in the capital of Australia during the night with high humidity (95%) and stable winds, which makes sense during the month of June. As well as Figure 6.h, the status is logical in the islands of the central Pacific Ocean, with moderate temperature and high humidity, but at low pressure, which may raise several questions about the weather of these islands with high humidity low pressure, which indicates an imbalance in the density of the region's gases, which may be due to the high percentage of oxygen compared to other gases.
+</p>
+<div style="margin:5px 5px 5px 10px;">
+    <figure class="fig_h3">
+        <figure>
+      <img src="weather/fig60.jpg" alt="weather_0" class='multi_img'>
+          <figcaption>(a)- Desert At The Evening</figcaption>
+        </figure>
+        <figure>
+      <img src="weather/fig61.jpg" alt="weather_1" class='multi_img'>
+          <figcaption>(b)- Sea At The Evening</figcaption>
+        </figure>
+        <figure>
+      <img src="weather/fig63.jpg" alt="weather_3" class='multi_img'>
+          <figcaption>(c)- Beach  At The Evening</figcaption>
+        </figure>
+        <figure>
+      <img src="weather/fig64.jpg" alt="weather_4" class='multi_img'>
+          <figcaption>(d)- North At The Evening</figcaption>
+        </figure>
+        <figure>
+      <img src="weather/fig65.jpg" alt="weather_5" class='multi_img'>
+          <figcaption>(e)- Ocean At The Evening</figcaption>
+        </figure>
+        <figure>
+      <img src="weather/fig66.jpg" alt="weather_6" class='multi_img'>
+          <figcaption>(f)- West Of USA At Noon (Juin)</figcaption>
+        </figure>
+        <figure>
+      <img src="weather/fig67.jpg" alt="weather_7" class='multi_img'>
+          <figcaption>(g)- Canberra At Midnight (Juin)</figcaption>
+        </figure>
+        <figure>
+      <img src="weather/fig68.jpg" alt="weather_8" class='multi_img'>
+          <figcaption>(h)- Central Pacific Islands At Dawn</figcaption>
+        </figure>
+      <figcaption>Fig. 1.6- Figure Representative For Weather Status Using Varios Locations In The World</figcaption>
+   </figure>
+</div>
+<img src="icons/7268053.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+<div class="select"><h3>7- Trace-Route </h3><img src="icons/9141922.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:30px;"></div>
+<div class="desc">
+<p class='h3'>
+    The trace-route feature is important in modern GPS applications, because of the possibility of using it while driving inside crowded cities, which especially helps strangers to navigate around each city with higher accuracy, so Roma was chosen as one of the largest cities in the world (all roads lead to Rome), (Figure 7.a), in Figure 7.b trace-route can only be activated by adding more two markers. Therefore, you must choose the distance or area state (Figure 7.c), and then the user moves one of the markers so that the road linking the markers appears in blue automatically (Figure 7.d) even after moving one of the markers, the roads are updated automatically, which means that they can be easily used during the track (Figure 7.e), many markers can be added, and during this process, the roads are automatically linked (Figure 7.f-h),  The trace-route feature is not affected when changing the state from distance to area or vice versa, so don't worry, status is automatically adjusted from 1D to 2D (Figure 7.i). You can also turn off and turn on the trace feature (Figure 7.j-r), to remove all markers at once from the map, please select the 'select state' label (Figure 7.t) and all markers will disappear permanently from the map.
+</p>
+<div style="margin:5px 5px 5px 10px;">
+    <figure class="fig_h3">
+        <figure>
+      <img src="trace/fig70.jpg" alt="weather_0" class='multi_img'>
+          <figcaption>(a)- Roma Location</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig71.jpg" alt="weather_1" class='multi_img'>
+          <figcaption>(b)- Error: Starting Trace-Route Without Markers</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig72.jpg" alt="weather_2" class='multi_img'>
+          <figcaption>(c)- Starting Trace-Route After Adding Two Markers</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig73.jpg" alt="weather_3" class='multi_img'>
+          <figcaption>(d)- After Starting The Trace Route Service</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig74.jpg" alt="weather_4" class='multi_img'>
+          <figcaption>(e)- After Moving The Second Marker</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig75.jpg" alt="weather_5" class='multi_img'>
+          <figcaption>(f)- After Moving The First Marker</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig76.jpg" alt="weather_6" class='multi_img'>
+          <figcaption>(g)- After Adding A Third Marker</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig77.jpg" alt="weather_7" class='multi_img'>
+          <figcaption>(h)- After Adding A Fourth Marker</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig78.jpg" alt="weather_8" class='multi_img'>
+          <figcaption>(i)- After Change The State To 'Area'</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig79.jpg" alt="weather_9" class='multi_img'>
+          <figcaption>(j)- After Stoping The Trace-Route Service</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig790.jpg" alt="weather_90" class='multi_img'>
+          <figcaption>(k)- After Restarting The Trace-Route Service</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig791.jpg" alt="weather_91" class='multi_img'>
+          <figcaption>(l)- After Change The State To 'Distance'</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig792.jpg" alt="weather_92" class='multi_img'>
+          <figcaption>(m)- After Adding A Fifth Marker</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig793.jpg" alt="weather_93" class='multi_img'>
+          <figcaption>(n)- After Change The State To 'Distance'</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig794.jpg" alt="weather_94" class='multi_img'>
+          <figcaption>(o)- After Adding A Remote Sixth Marker</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig795.jpg" alt="weather_95" class='multi_img'>
+          <figcaption>(p)- After Stoping The Trace-Route Service</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig796.jpg" alt="weather_96" class='multi_img'>
+          <figcaption>(q)- After Adding A Remote Seventh Marker</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig797.jpg" alt="weather_97" class='multi_img'>
+          <figcaption>(r)- After Change The State To 'Area'</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig798.jpg" alt="weather_98" class='multi_img'>
+          <figcaption>(s)- Click On Area Button For Removing All Markers</figcaption>
+        </figure>
+        <figure>
+      <img src="trace/fig799.jpg" alt="weather_99" class='multi_img'>
+          <figcaption>(t)- After Pressing 'Select State' Label</figcaption>
+        </figure>
+      <figcaption>Fig. 1.7- Figure Representative For The Trace-Route Service Processus</figcaption>
+   </figure>
+</div>
+<img src="icons/7268053.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+<div class="select"><h3>8- Setting </h3><img src="icons/9141922.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:30px;"></div>
+<div class="desc">
+<!-- <img src="icons/7268053.jpg" onclick="descc(this)" style="float:right; margin: 3px 10px 5px 5px;" > -->
+<p class='h3'>
+    No application is without settings, users can show the setting from the left side, by pressing the setting button or swift from the left towards the centre of the screen, the setting appears (Figure 8), which consists of the user profile image that is updated starting from the second level, as well as the level title (SciGPS), then the application language, font-size, instructions, assistant, and manuals.
+</p>
+<div style="margin:5px 5px 5px 20px;">
+<figure  class="fig_h4">
+    <figure>
+      <img src="setting/fig80.jpg" alt="setting_0" class='multi_img'>
+      </figure>
+      <figcaption >Fig. 1.8- Design For The Setting</figcaption>
+</figure>
+</div>
+<div class="select"><h4>A- Language </h4><img src="icons/189810.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:30px;"></div>
+<div class="desc">
+<p class='h4'>
+    All smart and international applications contain most of the languages that users talk, therefore, this application supports 7 basic languages, which are Arabic, English, French, Spanish, Italian, Portuguese, and Dutch. To change the language, simply click on the 'English' button, and the list of languages appears (Figure 9.a), after selecting any language, the text of the application immediately switches to this language (Figure 9.b), including additional supplies as markers, status, menus, ..., (Figure 9.d-e), the same way for French and Spanish... (Figure 9.b-d).
+</p>
+<div style="margin:5px 5px 5px 20px;">
+<figure class="fig_h4">
+        <figure>
+      <img src="setting/fig81.jpg" alt="setting_1" class='multi_img'>
+          <figcaption>(a)- After Pressing On The Language Button</figcaption>
+        </figure>
+        <figure>
+      <img src="setting/fig82.jpg" alt="setting_2" class='multi_img'>
+          <figcaption>(b)- After Selecting The Arabic Language</figcaption>
+        </figure>
+        <figure>
+      <img src="setting/fig83.jpg" alt="setting_3" class='multi_img'>
+          <figcaption>(c)- All The Text Change To Arabic </figcaption>
+        </figure>
+        <figure>
+      <img src="setting/fig84.jpg" alt="setting_4" class='multi_img'>
+          <figcaption>(d)- All Added Markers' Label Also Change</figcaption>
+        </figure>
+        <figure>
+      <img src="setting/fig85.jpg" alt="setting_5" class='multi_img'>
+          <figcaption>(e)- All Menus' Label Also Change</figcaption>
+        </figure>
+<!--         <figure>
+      <img src="setting/fig86.jpg" alt="setting_6" class='multi_img'>
+          <figcaption>()- </figcaption>
+        </figure> -->
+        <figure>
+      <img src="setting/fig87.jpg" alt="setting_7" class='multi_img'>
+          <figcaption>(f)- After Selecting The French Language</figcaption>
+        </figure>
+<!--         <figure>
+      <img src="setting/fig88.jpg" alt="setting_8" class='multi_img'>
+          <figcaption>(g)- Maps</figcaption>
+        </figure> -->
+        <figure>
+      <img src="setting/fig89.jpg" alt="setting_9" class='multi_img'>
+          <figcaption>(g)- Spanish Language</figcaption>
+        </figure>
+        <figure>
+      <img src="setting/fig890.jpg" alt="setting_90" class='multi_img'>
+          <figcaption>(h)- Italian Language</figcaption>
+        </figure>
+        <figure>
+      <img src="setting/fig891.jpg" alt="setting_91" class='multi_img'>
+          <figcaption>(i)- Selecting The Rest Of Languages</figcaption>
+        </figure>
+        <figure>
+      <img src="setting/fig898.jpg" alt="setting_98" class='multi_img'>
+          <figcaption>(j)- Portuguese Language</figcaption>
+        </figure>
+        <figure>
+      <img src="setting/fig892.jpg" alt="setting_92" class='multi_img'>
+          <figcaption>(k)- Dutch Language</figcaption>
+        </figure>
+      <figcaption>Fig. 1.9- Maps</figcaption>
+</figure>
+</div>
+<img src="icons/unnamed.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+<div class="select"><h4>B- Assistant </h4><img src="icons/189810.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:30px;"></div>
+<div class="desc">
+<p class='h4'>
+    Assistant is an excellent feature, which helps illiterate users, and the visually impaired, as well as supports users to interact with all application features smoothly, so that it is used after activation during driving, alerts, and its most important uses start from the second level to read the content of messages and names of contacts, translate texts ... etc.
+</p>
+<img src="icons/unnamed.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+<div class="select"><h4>C- Text-size </h4><img src="icons/189810.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:30px;"></div>
+<div class="desc">
+<p class='h4'>
+    Font size has been added to the app to enable the visually impaired to control the text character size from 5 grades, Figure 10.b shows the size of the letters after changing the font size from setting so that the letters appear too large.
+</p>
+<div style="margin:5px 5px 5px 20px;">
+<figure class="fig_h4">
+        <figure>
+      <img src="setting/fig893.jpg" alt="setting_93" class='multi_img'>
+          <figcaption>(a)- Increase The font-Size</figcaption>
+        </figure>
+        <figure>
+      <img src="setting/fig895.jpg" alt="setting_95" class='multi_img'>
+          <figcaption>(b)- Menu labels' Text After Increasing The Size</figcaption>
+        </figure>
+      <figcaption>Fig. 1.10- Increasing The Font-Size From The Setting</figcaption>
+</figure>
+</div>
+<img src="icons/unnamed.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+<div class="select"><h4>D- Tutorials </h4><img src="icons/189810.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:30px;"></div>
+<div class="desc">
+<p class='h4'>
+    All professional works contain manuals, that enable users to explore the various advantages of the product. This application includes many special and original features, then, the application creator wants to help those interested to use and benefit from all these features, so the most important instructions have been integrated with the app, as well as manuals written in boring detail about all corners of the app, whenever a video is shared in YouTube,  It briefly explains how to use all the features of the app.
+</p>
+<div style="margin:5px 5px 5px 10px;">
+<figure class="fig_h4">
+    <figure>
+      <img src="setting/fig897.jpg" alt="setting_97" class='multi_img'>
+      </figure>
+      <figcaption>Fig. 1.11- Basic Instructions Of The App</figcaption>
+</figure>
+</div>
+<img src="icons/unnamed.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+<img src="icons/7268053.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+
+<div class="select"><h3>9- Videos </h3><img src="icons/9141922.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:30px;"></div>
+<div class="desc">
+<div style="margin:5px 5px 5px 20px;">
+<figure class="fig_h4">
+        <figure>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/2GuvDL0RR3Y?si=PS8XexKGlmzY6Vnf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption>(a)- Download and Install ChatGPS-App On Android: Part-1</figcaption>
+        </figure>
+        <figure>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/eS_dk9MeHDU?si=G-4xw0NtyRdE2Gup" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption>(b)- SciGPS: Part-2</figcaption>
+        </figure>
+        <figure>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rQm1QS0_dmU?si=YKPe7v-zmCdaCqY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption>(c)- SciGPS: Part-3</figcaption>
+        </figure>
+        <figure>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/cEJaS92tUZc?si=sCQjcwVgWyV-_M8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption>(d)- SciGPS: Part-4</figcaption>
+        </figure>
+        <figure>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/6jyzrMy2zsA?si=up3VzgqKa1lLDZxR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption>(e)- Download and Install ChatGPS-App On Linux: Part-5</figcaption>
+        </figure>
+      <figcaption>Fig. 1.12- SciGPS-Videos</figcaption>
+</figure>
+</div>
+<img src="icons/7268053.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+<img src="icons/close-icon.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+</section>
+
+
+<section>
+<div class="select"><h2>II- ChatGPS</h2><img src="icons/interface.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:10px;"></img> </div>
+<div class="desc">
+<p class='h2'>
+    Soon ...
+</p>
+<h3>1- Login</h3>
+<p class='h3'>
+    Soon ...
+</p>
+<h3>2- Logout</h3>
+<p class='h3'>
+    Soon ...
+</p>
+<h3>3- Profile</h3>
+<p class='h3'>
+    Soon ...
+</p>
+<h3>4- Contacts</h3>
+<p class='h3'>
+    Soon ...
+</p>
+<h3>5- Invitations</h3>
+<p class='h3'>
+    Soon ...
+</p>
+<h3>6- Send A Message</h3>
+<p class='h3'>
+    Soon ...
+</p>
+<h3>7- Send An Audio</h3>
+<p class='h3'>
+    Soon ...
+</p>
+<h3>8- Conversations</h3>
+<p class='h3'>
+    Soon ...
+</p>
+<h3>9- Blockout</h3>
+<p class='h3'>
+    Soon ...
+</p>
+<h4>a- Blockout GPS</h4>
+<p class='h4'>
+    Soon ...
+</p>
+<h4>b- Blockout Conversations</h4>
+<p class='h4'>
+    Soon ...
+</p>
+<h3>10- Trace-Route Assistant</h3>
+<p class='h3'>
+    Soon ...
+</p>
+
+<div class="select"><h3>11- Videos </h3><img src="icons/9141922.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:30px;"></div>
+<div class="desc">
+<div style="margin:5px 5px 5px 20px;">
+<figure class="fig_h4">
+        <figure>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/viOETBPMlSE?si=Y5LhpCCJ_2kojzko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption>(a)- Sign-up to ChatGPS: Part-1</figcaption>
+        </figure>
+        <figure>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/9XODJLBlnnI?si=G29_5HkpBxTn6X_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption>(b)- Shell Access: Part-2</figcaption>
+        </figure>
+        <figure>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/m-RrcP0PYfA?si=NsxOnv6axl7b1dYP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption>(c)- Other Devices' Shell Access: Part-3</figcaption>
+        </figure>
+        <figure>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/K6-KPoPoPUc?si=i4djPVdtmYIM5bXq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption>(d)- The Use Of GPT-Assistant: Part-4</figcaption>
+        </figure>
+        <figure>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/GqfEGE3ohLI?si=Cv0-wne9j0GkLFlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption>(e)- Make Conversations With Contacts: Part-5</figcaption>
+        </figure>
+        <figure>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/afvEwpnZjUs?si=60Eicn3HyXtJrgoT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption>(f)- Make Conversations With Contacts Using GPT-Assistant: Part-6</figcaption>
+        </figure>
+      <figcaption>Fig. 2.1- ChatGPS-Videos</figcaption>
+</figure>
+</div>
+<img src="icons/7268053.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+<img src="icons/close-icon.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+</section>
+
+
+<section>
+<div class="select"><h2>III- DeepGPS</h2><img src="icons/interface.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:10px;"></img> </div>
+<div class="desc">
+<p class='h2'>
+    Soon ...
+</p>
+<h3>1- Terminale</h3>
+<p class='h3'>
+    Soon ...
+</p>
+<h3>2- Shell Requests</h3>
+<p class='h3'>
+    Soon ...
+</p>
+<h3>3- Run Other Shells</h3>
+<p class='h3'>
+    Soon ...
+</p>
+<h3>4- Blockout Teminale</h3>
+<p class='h3'>
+    Soon ...
+</p>
+
+
+<div class="select"><h3>5- Videos </h3><img src="icons/9141922.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:30px;"></div>
+<div class="desc">
+<div style="margin:5px 5px 5px 20px;">
+<figure class="fig_h4">
+        <figure>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/8mJJpqirizA?si=dIF2GjF3QHgsKxZv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption>(a)- Shell-Access: Part-1</figcaption>
+        </figure>
+      <figcaption>Fig. 3.1- DeepGPS-Videos</figcaption>
+</figure>
+</div>
+<img src="icons/7268053.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+<img src="icons/close-icon.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+</section>
+
+<section>
+<h2>Conclusion</h2>
+<p class='h2'>
+    Through all levels, a large distinction appears between their powers, the first level contains the basic characteristics of GPS applications, such as navigation, traceroute, distance, area, search for places, ... etc. To simplify communication between users at the second level, therefore, the second level depends on determining the GPS to use track and inductors, as well as transferring files between devices, allowing users to take advantage of all their devices' abilities, as well as positively touch their impact on the real life. Starting from the fourth level, webcams will be included and shared stories, riles, and news, also, users can be provided with their libraries, and enjoy beautiful games useful to their minds. 
+</p>
+</section>
+<!-- input#uc-download-link.goog-inline-block.jfk-button.jfk-button-action -->
+<section>
+<!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> -->
+
+<!-- <form id="search-form" action="about:blank">
+  <button type="submit" id="search-btn" name="search" value="Search" class="btn btn-primary gap-right">
+    <i class="fas fa fa-search gap-right"></i> 
+    <span>Search</span>
+  </button>
+</form> -->
+<!-- <form action="https://drive.usercontent.google.com/download">
+  <button type="submit" value="Android" class="button big blue btn btn-primary gap-right">
+    <i class="fas fa fa-search gap-right"></i> 
+    <span>Search</span>
+  </button>
+  <input type="hidden" name="id" value="1LvDyTD-A-f9JoZiTQA42D_a-BuHhFWpb">
+        <input type="hidden" name="export" value="download">
+        <input type="hidden" name="authuser" value="0">
+        <input type="hidden" name="confirm" value="t">
+        <input type="hidden" name="uuid" value="30f59a91-97f4-44eb-b994-69539543f8e1">
+        <input type="hidden" name="at" value="APZUnTWCkrwrWRCsxw1AM2yYOFYw:1721475960574">
+</form> -->
+<!-- <h2>Direct Download</h2>
+
+<div style="display: table;margin-left: 90px;">
+<div style="display: table-cell">
+<a href="http://chatgps.atwebpages.com/area/fig40.jpg" download="filename.zip">Download File</a>
+<a href="https://www.example.com/path/to/your/file.zip" class="download-btn" download="filename.zip">Download File</a>
+ <form action="/area/fig40.jpg" target="_blank">
+        <button type="submit" value="Android" class="button big blue btn btn-primary gap-right">
+            <i class="fas fa fa-android gap-right"></i> 
+            For Android
+            <span>up: 21 Nov 2024</span>
+          </button> -->
+<!--         <input type="hidden" name="id" value="1F3MQLFXqu7qWEGmP_tsapw99j3e909jK">
+        <input type="hidden" name="export" value="download">
+        <input type="hidden" name="authuser" value="0"> -->
+        <!-- <input type="hidden" name="confirm" value="t"> -->
+       <!--  <input type="hidden" name="uuid" value="bf517c4b-99ec-44e4-ab1c-963087a6a55e">
+        <input type="hidden" name="at" value="APZUnTUAKgV0YJsl9Zm-sFn8YhTR%3A"> -->
+    <!-- </form> -->
+<!-- </div>
+</div> -->
+
+<h2>Download From Drive</h2>
+<p class='h2'>
+- These Buttons Are Direct URLs Into Our Drive Repository, That Make Users Can Download The Latest Uploaded Version.
+<br>
+- The File '.apk' Is Safe.
+<br>
+- This App Purpose Is To Help Anyone Need Help.
+</p>
+<!-- <a href="https://ucd3bcc70f05528909ef80869434.dl.dropboxusercontent.com/cd/0/get/CYNPjnems0oFDZtcmt0FOgosuIOrgbmVXyrfgMODpa6azXrrzYr82ztkoewCA394Zj5QstDWVxy7ij5tHnjy_CBG0omZZiiQ3dSGePPjHOuQmeiHM9ULEpb77ZYtT20gjgz8K-zPpQsWDZ6luvQew7Rtj1I0egrZyX1KTceyFesJMQ/file#">Android</a> -->
+<!-- <div style="display: table-cell">
+<form action="https://drive.usercontent.google.com/download">
+        <button type="submit" value="Android" class="button big blue btn btn-primary gap-right">
+            <i class="fas fa fa-android gap-right"></i> 
+            Android
+            <span>Get It Now</span>
+          </button>
+        <input type="hidden" name="id" value="1LvDyTD-A-f9JoZiTQA42D_a-BuHhFWpb">
+        <input type="hidden" name="export" value="download">
+        <input type="hidden" name="authuser" value="0">
+        <input type="hidden" name="confirm" value="t">
+        <input type="hidden" name="uuid" value="30f59a91-97f4-44eb-b994-69539543f8e1">
+        <input type="hidden" name="at" value="APZUnTWCkrwrWRCsxw1AM2yYOFYw:1721475960574">
+    </form>
+</div> -->
+
+
+<div style="display: table;margin-left: 90px;">
+<div style="display: table-cell">
+<form action="https://drive.usercontent.google.com/download" target="_blank">
+        <button type="submit" value="Android" class="button big blue btn btn-primary gap-right">
+            <i class="fas fa fa-android gap-right"></i> 
+            For Android
+            <span>up: 21 Nov 2024</span>
+          </button>
+        <input type="hidden" name="id" value="1F3MQLFXqu7qWEGmP_tsapw99j3e909jK">
+        <input type="hidden" name="export" value="download">
+        <input type="hidden" name="authuser" value="0">
+        <!-- <input type="hidden" name="confirm" value="t"> -->
+       <!--  <input type="hidden" name="uuid" value="bf517c4b-99ec-44e4-ab1c-963087a6a55e">
+        <input type="hidden" name="at" value="APZUnTUAKgV0YJsl9Zm-sFn8YhTR%3A"> -->
+    </form>
+</div>
+<div style="display: table-cell">
+<form action="https://drive.usercontent.google.com/download" target="_blank">
+        <button type="submit" value="Linux" class="button big blue btn btn-primary gap-right">
+            <i class="fas fa fa-linux gap-right"></i> 
+            For Linux
+            <span>up: 21 Nov 2024</span>
+          </button>
+        <input type="hidden" name="id" value="1s8W1jcdcCjGHEn6Vhr2EuEwjd6vTGwsZ">
+        <input type="hidden" name="export" value="download">
+        <input type="hidden" name="authuser" value="0">
+    </form>
+</div>
+<div style="display: table-cell">
+<form action="https://drive.usercontent.google.com/download " target="_blank">
+        <button type="submit" value="Windows" class="button big blue btn btn-primary gap-right">
+            <i class="fas fa fa-windows gap-right"></i> 
+            For Windows
+            <span>up: 21 Nov 2024</span>
+          </button>
+        <input type="hidden" name="id" value="1QFzAw35fMfUFtjn_bNVNFlUgIMrosKv4">
+        <input type="hidden" name="export" value="download">
+        <input type="hidden" name="authuser" value="0">
+    </form>
+</div>
+</div>
+<h2>Download From <a href="https://uptodown.com/" target="_blank">Uptodown</a> Platform</h2>
+<div style="display: table;margin-left: 90px;">
+<div style="display: table-cell">
+<form action="https://ma-iopy-chatgps.en.uptodown.com/android" target="_blank">
+        <button type="submit" value="Uptodown-Android" class="button big blue btn btn-primary gap-right">
+            <i class="fas fa fa-android gap-right"></i> 
+            For Android
+            <span>up: 21 Nov 2024</span>
+          </button>
+    </form>
+</div>
+<div style="display: table-cell">
+<form action="https://chatgps.en.uptodown.com/windows" target="_blank">
+        <button type="submit" value="Uptodown-Windows" class="button big blue btn btn-primary gap-right">
+            <i class="fas fa fa-windows gap-right"></i>
+            For Windows
+            <span>up: 21 Nov 2024</span>
+          </button>
+    </form>
+</div>
+
+
+</div>
+<!-- <div style="display: table;margin-left: 90px;">
+<div style="display: table-cell">
+<a href='https://ma-iopy-chatgps.en.uptodown.com/android' title='Download ChatGPS' target="_blank">
+                <img src='https://stc.utdstc.com/img/mediakit/download-aao-small-b.png' alt='Download ChatGPS'>
+                </a>
+</div>
+</div> -->
+<!-- <h2>Download The Latest Version For Windows From Publishers</h2>
+<div style="display: table;margin-left: 90px;">
+<div style="display: table-cell">
+<a href='https://chatgps.en.uptodown.com/windows' title='Download ChatGPS' target="_blank">
+                <img src='https://stc.utdstc.com/img/mediakit/isotipo.png' alt='Download ChatGPS'>
+                </a>
+</div>
+</div> -->
+<!-- <div style="display: table-cell">
+<form action="https://drive.usercontent.google.com/download">
+        <button type="submit" value="Android" class="button big blue btn btn-primary gap-right">
+            <i class="fas fa fa-android gap-right"></i> 
+            Android
+            <span>Get It Now</span>
+          </button>
+        <input type="hidden" name="id" value="1OUtBpHDtqLdo3cDIXYjjbBIb5BqC7Mmk">
+        <input type="hidden" name="export" value="download">
+        <input type="hidden" name="authuser" value="0">
+        <input type="hidden" name="confirm" value="t">
+        <input type="hidden" name="uuid" value="bf517c4b-99ec-44e4-ab1c-963087a6a55e">
+        <input type="hidden" name="at" value="APZUnTUAKgV0YJsl9Zm-sFn8YhTR%3A">
+    </form>
+</div>
+<div style="display: table-cell">
+<form action="https://drive.usercontent.google.com/download">
+        <button type="submit" value="Linux" class="button big blue btn btn-primary gap-right">
+            <i class="fas fa fa-linux gap-right"></i> 
+            Linux
+            <span>Get It Now</span>
+          </button>
+        <input type="hidden" name="id" value="1SU3G2O8w0ANdgCBjLn-7cEL0fvY2RyH0">
+        <input type="hidden" name="export" value="download">
+        <input type="hidden" name="authuser" value="0">
+    </form>
+</div>
+<div style="display: table-cell">
+<form action="https://drive.usercontent.google.com/download">
+        <button type="submit" value="Windows" class="button big blue btn btn-primary gap-right">
+            <i class="fas fa fa-windows gap-right"></i> 
+            Windows
+            <span>Get It Now</span>
+          </button>
+        <input type="hidden" name="id" value="11Y0ldOkOR3R1v9_rWLcTVtpOHu32payo">
+        <input type="hidden" name="export" value="download">
+        <input type="hidden" name="authuser" value="0">
+    </form>
+</div>
+</div> -->
+</section>
+
+<section>
+<h2>Terms Of Use</h2>
+<p class='h2'>
+    <br>
+    1- This Work Doesn't Funded By Any Organistion And Not Include Any ADS;
+    <br><br>
+    2- Every Personal User Can Use This App As An Open & Public Application, Following Their Governement Social & Ethical Laws;
+    <br><br>
+    3- According To The Privacy Of Use, We Have No Responsablity On Any Bad Activitie, If Is Not Reported By AnyBody;
+    <br><br>
+    4- Dear Users, To Avoid Any Legal Prosecutions, Please Do Not Participates In The Use Of This App In Illegal Activities, Or Share Any Account Privacy Information.
+    5- All Passwords And Personal Data Will Be Encrypted And Stored On This Device, And Will Be Forgotten After Deletting The App;
+    <br><br>
+    6- This App Doesn't Use Any Online Database For Storing Your Conversations History, So After Reinstalling The App, The History Will Be Self-Restored From Your Contacts, As A Mutual-Data."
+</p>
+<br><br>
+</section>
+<h2>Contact</h2>
+<p class='h2'>
+    <br>
+    Gmail: chatgps.app@gmail.com
+    <br><br>
+    Youtube-Channel: <a href="https://youtube.com/@chatgps-app" target="_blank">https://youtube.com/@chatgps-app</a>
+    <br><br>
+    LinkedIn: <a href=" https://www.linkedin.com/in/chatgps-app-714a59319/" target="_blank"> https://www.linkedin.com/in/chatgps-app-714a59319/</a>
+    <br><br>
+    X.com: <a href="https://x.com/chatgps_app" target="_blank"> https://x.com/chatgps_app</a>
+</p>
+</section>
+<section>
+<div class="select"><h4>Privacy Policy</h4><img src="icons/interface.jpg" onclick="descw(this)" class="menu_icon" style="margin-left:10px;"></img> </div>
+<div class="desc">
+<p>Last updated: June 16, 2024</p>
+<p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+<p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.termsfeed.com/privacy-policy-generator/" target="_blank">Privacy Policy Generator</a>.</p>
+<h2>Interpretation and Definitions</h2>
+<h3>Interpretation</h3>
+<p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
+<h3>Definitions</h3>
+<p>For the purposes of this Privacy Policy:</p>
+<ul>
+<li>
+<p><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</p>
+</li>
+<li>
+<p><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where &quot;control&quot; means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</p>
+</li>
+<li>
+<p><strong>Application</strong> refers to ChatGPS, the software program provided by the Company.</p>
+</li>
+<li>
+<p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to ChatGPS.</p>
+</li>
+<li>
+<p><strong>Country</strong> refers to:  Morocco</p>
+</li>
+<li>
+<p><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</p>
+</li>
+<li>
+<p><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</p>
+</li>
+<li>
+<p><strong>Service</strong> refers to the Application.</p>
+</li>
+<li>
+<p><strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</p>
+</li>
+<li>
+<p><strong>Usage Data</strong> refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</p>
+</li>
+<li>
+<p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
+</li>
+</ul>
+<h2>Collecting and Using Your Personal Data</h2>
+<h3>Types of Data Collected</h3>
+<h4>Personal Data</h4>
+<p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:</p>
+<ul>
+<li>
+<p>First name and last name</p>
+</li>
+<li>
+<p>Usage Data</p>
+</li>
+</ul>
+<h4>Usage Data</h4>
+<p>Usage Data is collected automatically when using the Service.</p>
+<p>Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
+<p>When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.</p>
+<p>We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.</p>
+<h4>Information Collected while Using the Application</h4>
+<p>While using Our Application, in order to provide features of Our Application, We may collect, with Your prior permission:</p>
+<ul>
+<li>
+<p>Information regarding your location</p>
+</li>
+<li>
+<p>Pictures and other information from your Device's camera and photo library</p>
+</li>
+</ul>
+<p>We use this information to provide features of Our Service, to improve and customize Our Service. The information may be uploaded to the Company's servers and/or a Service Provider's server or it may be simply stored on Your device.</p>
+<p>You can enable or disable access to this information at any time, through Your Device settings.</p>
+<h3>Use of Your Personal Data</h3>
+<p>The Company may use Personal Data for the following purposes:</p>
+<ul>
+<li>
+<p><strong>To provide and maintain our Service</strong>, including to monitor the usage of our Service.</p>
+</li>
+<li>
+<p><strong>To manage Your Account:</strong> to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.</p>
+</li>
+<li>
+<p><strong>For the performance of a contract:</strong> the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service.</p>
+</li>
+<li>
+<p><strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.</p>
+</li>
+<li>
+<p><strong>To provide You</strong> with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.</p>
+</li>
+<li>
+<p><strong>To manage Your requests:</strong> To attend and manage Your requests to Us.</p>
+</li>
+<li>
+<p><strong>For business transfers:</strong> We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.</p>
+</li>
+<li>
+<p><strong>For other purposes</strong>: We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience.</p>
+</li>
+</ul>
+<p>We may share Your personal information in the following situations:</p>
+<ul>
+<li><strong>With Service Providers:</strong> We may share Your personal information with Service Providers to monitor and analyze the use of our Service,  to contact You.</li>
+<li><strong>For business transfers:</strong> We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.</li>
+<li><strong>With Affiliates:</strong> We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.</li>
+<li><strong>With business partners:</strong> We may share Your information with Our business partners to offer You certain products, services or promotions.</li>
+<li><strong>With other users:</strong> when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside.</li>
+<li><strong>With Your consent</strong>: We may disclose Your personal information for any other purpose with Your consent.</li>
+</ul>
+<h3>Retention of Your Personal Data</h3>
+<p>The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p>
+<p>The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.</p>
+<h3>Transfer of Your Personal Data</h3>
+<p>Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.</p>
+<p>Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.</p>
+<p>The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.</p>
+<h3>Delete Your Personal Data</h3>
+<p>You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.</p>
+<p>Our Service may give You the ability to delete certain information about You from within the Service.</p>
+<p>You may update, amend, or delete Your information at any time by signing in to Your Account, if you have one, and visiting the account settings section that allows you to manage Your personal information. You may also contact Us to request access to, correct, or delete any personal information that You have provided to Us.</p>
+<p>Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so.</p>
+<h3>Disclosure of Your Personal Data</h3>
+<h4>Business Transactions</h4>
+<p>If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.</p>
+<h4>Law enforcement</h4>
+<p>Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).</p>
+<h4>Other legal requirements</h4>
+<p>The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:</p>
+<ul>
+<li>Comply with a legal obligation</li>
+<li>Protect and defend the rights or property of the Company</li>
+<li>Prevent or investigate possible wrongdoing in connection with the Service</li>
+<li>Protect the personal safety of Users of the Service or the public</li>
+<li>Protect against legal liability</li>
+</ul>
+<h3>Security of Your Personal Data</h3>
+<p>The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.</p>
+<h2>Children's Privacy</h2>
+<p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.</p>
+<p>If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.</p>
+<h2>Links to Other Websites</h2>
+<p>Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
+<p>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
+<h2>Changes to this Privacy Policy</h2>
+<p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
+<p>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the &quot;Last updated&quot; date at the top of this Privacy Policy.</p>
+<p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+<h2>Contact Us</h2>
+<p>If you have any questions about this Privacy Policy, You can contact us:</p>
+<ul>
+<li>
+<p>By email: chatgps.app@gmail.com</p>
+</li>
+<li>
+<p>By visiting this page on our website: <a href="http://chatgps.rf.gd/" rel="external nofollow noopener" target="_blank">http://chatgps.rf.gd/</a></p>
+</li>
+<!-- <li>
+<p>By phone number: +212680402812</p>
+</li> -->
+</ul>
+<img src="icons/close-icon.jpg" onclick="descc(this)" class='center' style="margin-top: 10px; margin-bottom: 10px;width: 40px;height: 40px;" >
+</div>
+</section>
+<br><br>
+</body>
+</html>

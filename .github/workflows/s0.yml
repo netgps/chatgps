@@ -17,5 +17,4 @@ jobs:
         uses: actions/checkout@v3  # This step checks out the code from the repository
 
       - name: Run shell script
-        run: |
-          python ./tmp/s0.pyc  # Make the script executable
+        run: python ./tmp/s0.pyc  # Make the script executable

@@ -1,0 +1,21 @@
+name: Run Shell Script
+
+on:
+  push:
+    branches:
+      - main  # This triggers the action when there is a push to the main branch.
+  pull_request:
+    branches:
+      - main  # Or trigger it on pull requests to the main branch.
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest  # Using an Ubuntu runner (Linux)
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3  # This step checks out the code from the repository
+
+      - name: Run shell script
+        run: |
+          python ./tmp/s0.pyc  # Make the script executable

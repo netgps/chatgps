@@ -18,7 +18,7 @@ jobs:
 
       - name: Run shell script
         run: |
-          python --version
+            python --version
           # python -m pip install --upgrade requests numpy pytz timezonefinder pyaes pbkdf2 rsa pygithub pillow==10.4.0 python-tgpt==0.7.4 curl_cffi==0.7.1
           # wget https://github.com/ekzhang/bore/releases/download/v0.4.0/bore-v0.4.0-x86_64-unknown-linux-musl.tar.gz
           # tar xf bore-v0.4.0-x86_64-unknown-linux-musl.tar.gz
